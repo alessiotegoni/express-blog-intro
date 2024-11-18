@@ -1,5 +1,5 @@
 import express from "express";
-import { postsList } from "./db";
+import { postsList } from "./db/index.js";
 
 const app = express();
 
@@ -12,4 +12,4 @@ app.get("/bacheca", (_, res) =>
   res.json({ postsList, postsCount: postsList.length })
 );
 
-app.listen(PORT, () => console.log(`Server running on port: ${PORT}`));
+app.listen(PORT, () => console.log(`✅ Server running on port: ${PORT}`));

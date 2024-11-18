@@ -2,6 +2,7 @@
   "name": "express-blog-intro",
   "version": "1.0.0",
   "main": "main.js",
+  "module": "ES6",
   "scripts": {
     "dev": "node --watch ."
   },
